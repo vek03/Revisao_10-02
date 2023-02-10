@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/dice_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/desc_text"
+        android:src="@drawable/dice_1"
+        android:textSize="20sp"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="@string/desc_text" />
+
+    <EditText
+        android:id="@+id/edtNum"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autofillHints="name"
+        android:digits="1,2,3,4,5,6"
+        android:inputType="number"
+        android:labelFor="@+id/edtNum"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/roll_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btnDesc" />
+
+</LinearLayout>

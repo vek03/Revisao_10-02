@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DicerollerImage</string>
+    <string name="desc_text">Insira um número de 1 a 6:</string>
+    <string name="btnDesc">Sortear</string>
+</resources>
